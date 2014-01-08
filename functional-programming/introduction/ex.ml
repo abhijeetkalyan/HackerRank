@@ -11,6 +11,7 @@ Evaluate e^x for given values of x, by using the above expansion for the first 1
  |0.0 -> 1.0 
  |x -> n *. factorial (n -. 1.0);;
 
+let a = read_int();;
  try
  while true do
   let line = float_of_string (input_line stdin) in
