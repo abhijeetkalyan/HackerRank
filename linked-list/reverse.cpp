@@ -7,7 +7,8 @@
      int data;
      struct Node *next;
   }
-*/
+*/ 
+
 Node* Reverse(Node *head)
 { 
   Node *tmp = new Node();

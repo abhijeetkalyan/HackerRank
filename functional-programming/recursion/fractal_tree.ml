@@ -17,9 +17,9 @@ let rec print_y start end pos size length = match pos,size, length with
 | _, _, 0 -> Printf.printf "_\n"
 | a, 0, x -> if (pos = length/2) then Printf.printf "1" else Printf.printf "_"; print_y start end (pos) *)
 
-let rec print_size size = match size with
+let rec print_straight size = match size with
 | 0 -> ();
 | y -> print_straight 5 10; print_size (size - 1)
-and print_straight mid length = match length with
+and print_str mid length = match length with
 | 0 -> Printf.printf "_\n"
 | x -> if (x = mid) then (Printf.printf "1"; print_straight mid (length -1)) else (Printf.printf "_"; print_straight mid (length -1))
